@@ -1,0 +1,26 @@
+<snapshot>
+    <configuration>
+        <data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+            <modules xmlns="urn:opendaylight:params:xml:ns:yang:controller:config">
+                <module>
+                    <type xmlns:ping="urn:opendaylight:params:xml:ns:yang:controller:config:ping-provider:impl">
+                        ping:ping-provider-impl
+                    </type>
+                    <name>ping-provider-impl</name>
+
+                    <rpc-registry>
+                        <type xmlns:binding="urn:opendaylight:params:xml:ns:yang:controller:md:sal:binding">binding:binding-rpc-registry</type>
+                        <name>binding-rpc-broker</name>
+                    </rpc-registry>
+
+                </module>
+            </modules>
+        </data>
+
+    </configuration>
+
+    <required-capabilities>
+        <capability>urn:opendaylight:params:xml:ns:yang:controller:config:ping-provider:impl?module=ping-provider-impl&revision=2014-05-23</capability>
+    </required-capabilities>
+
+</snapshot>
